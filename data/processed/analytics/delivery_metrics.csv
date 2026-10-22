@@ -1,0 +1,68 @@
+metric_group,metric_name,metric_value,model_name,model_version,metric_text,evaluated_at
+data_quality,raw_rows,45593.0,,,,2026-10-21 19:30:30.374726
+data_quality,raw_columns,20.0,,,,2026-10-21 19:30:30.374726
+data_quality,duplicate_rows_removed,0.0,,,,2026-10-21 19:30:30.374726
+data_quality,invalid_target_rows,0.0,,,,2026-10-21 19:30:30.374726
+data_quality,invalid_gps_rows,4071.0,,,,2026-10-21 19:30:30.374726
+data_quality,distance_outlier_rows,0.0,,,,2026-10-21 19:30:30.374726
+data_quality,missing_core_category_rows,1506.0,,,,2026-10-21 19:30:30.374726
+data_quality,invalid_numeric_rows,0.0,,,,2026-10-21 19:30:30.374726
+data_quality,excluded_total,5577.0,,,,2026-10-21 19:30:30.374726
+data_quality,final_rows,40016.0,,,,2026-10-21 19:30:30.374726
+data_quality,avg_duration_min,26.428678528588563,,,,2026-10-21 19:30:30.374726
+data_quality,median_duration_min,26.0,,,,2026-10-21 19:30:30.374726
+data_quality,p90_duration_min,40.0,,,,2026-10-21 19:30:30.374726
+data_quality,late_threshold_min,33.0,,,,2026-10-21 19:30:30.374726
+data_quality,late_rate,0.2229608156737305,,,,2026-10-21 19:30:30.374726
+data_quality,train_rows,32012.0,,,,2026-10-21 19:30:30.374726
+data_quality,test_rows,8004.0,,,,2026-10-21 19:30:30.374726
+missing_values,Weatherconditions,616.0,,,,2026-10-21 19:30:30.374726
+missing_values,Road_traffic_density,601.0,,,,2026-10-21 19:30:30.374726
+missing_values,multiple_deliveries,993.0,,,,2026-10-21 19:30:30.374726
+missing_values,Festival,228.0,,,,2026-10-21 19:30:30.374726
+missing_values,City,1200.0,,,,2026-10-21 19:30:30.374726
+missing_values_after_cleaning,Delivery_person_Age,1067.0,,,,2026-10-21 19:30:30.374726
+missing_values_after_cleaning,Delivery_person_Ratings,1105.0,,,,2026-10-21 19:30:30.374726
+missing_values_after_cleaning,multiple_deliveries,859.0,,,,2026-10-21 19:30:30.374726
+model_performance,Random Forest.mae,3.126179993336665,Random Forest,1.0,,2026-10-21 19:30:30.374726
+model_performance,Random Forest.rmse,3.9218431898095574,Random Forest,1.0,,2026-10-21 19:30:30.374726
+model_performance,Random Forest.r2,0.8193881026352773,Random Forest,1.0,,2026-10-21 19:30:30.374726
+model_performance,Random Forest.mape,0.13471583816558808,Random Forest,1.0,,2026-10-21 19:30:30.374726
+dataset,raw_filename,,,,data/raw/food_delivery.csv,2026-10-21 19:30:30.374726
+dataset,source_url,,,,https://github.com/koushik-Devs/Food_Delivery_Time_Prediction,2026-10-21 19:30:30.374726
+dataset,license,,,,No explicit license file; used for academic analysis only.,2026-10-21 19:30:30.374726
+dataset,target,,,,Time_taken(min) parsed to duration_min,2026-10-21 19:30:30.374726
+dataset,date_range,,,,01-03-2022 to 31-03-2022,2026-10-21 19:30:30.374726
+dataset,limitations,,,,No price/quantity; timestamps incomplete; straight-line distance; associations only.,2026-10-21 19:30:30.374726
+dataset,schema,,,,"ID:object, Delivery_person_ID:object, Delivery_person_Age:object, Delivery_person_Ratings:object, Restaurant_latitude:float64, Restaurant_longitude:float64, Delivery_location_latitude:float64, Delivery_location_longitude:float64, Order_Date:object, Time_Orderd:object, Time_Order_picked:object, Weatherconditions:object, Road_traffic_density:object, Vehicle_condition:int64, Type_of_order:object, Type_of_vehicle:object, multiple_deliveries:object, Festival:object, City:object, Time_taken(min):object",2026-10-21 19:30:30.374726
+app_meta,best_model,3.9218431898095574,Random Forest,1.0,Random Forest,2026-10-21 19:30:30.374726
+app_meta,model_version,,,,1.0,2026-10-21 19:30:30.374726
+app_meta,generated_at,,,,2026-10-22 01:00:30.319195,2026-10-21 19:30:30.374726
+data_quality,min_duration_min,10.0,,,,2026-10-21 19:30:30.374726
+data_quality,max_duration_min,54.0,,,,2026-10-21 19:30:30.374726
+data_quality,above_threshold_count,8922.0,,,,2026-10-21 19:30:30.374726
+data_quality,above_threshold_pct,0.2229608156737305,,,,2026-10-21 19:30:30.374726
+data_quality,score_threshold_min,33.0,,,,2026-10-21 19:30:30.374726
+delay_risk_performance,accuracy,0.8735632183908046,Logistic Regression,1.0,,2026-10-21 19:30:30.374726
+delay_risk_performance,precision,0.7294751009421265,Logistic Regression,1.0,,2026-10-21 19:30:30.374726
+delay_risk_performance,recall,0.6399055489964581,Logistic Regression,1.0,,2026-10-21 19:30:30.374726
+delay_risk_performance,f1,0.6817610062893081,Logistic Regression,1.0,,2026-10-21 19:30:30.374726
+delay_risk_performance,roc_auc,0.9253199041269926,Logistic Regression,1.0,,2026-10-21 19:30:30.374726
+delay_risk_performance,probability_threshold,0.5,Logistic Regression,1.0,,2026-10-21 19:30:30.374726
+delay_risk_performance,threshold_min,33.0,Logistic Regression,1.0,,2026-10-21 19:30:30.374726
+delay_risk_performance,training_threshold_min,33.0,Logistic Regression,1.0,,2026-10-21 19:30:30.374726
+delay_risk_performance,train_positive_rate,0.22579032862676496,Logistic Regression,1.0,,2026-10-21 19:30:30.374726
+delay_risk_performance,test_positive_rate,0.21164417791104448,Logistic Regression,1.0,,2026-10-21 19:30:30.374726
+delay_risk_performance,train_rows,32012.0,Logistic Regression,1.0,,2026-10-21 19:30:30.374726
+delay_risk_performance,test_rows,8004.0,Logistic Regression,1.0,,2026-10-21 19:30:30.374726
+delay_risk_performance,train_positives,7228.0,Logistic Regression,1.0,,2026-10-21 19:30:30.374726
+delay_risk_performance,test_positives,1694.0,Logistic Regression,1.0,,2026-10-21 19:30:30.374726
+delay_risk_performance,tn,5908.0,Logistic Regression,1.0,,2026-10-21 19:30:30.374726
+delay_risk_performance,fp,402.0,Logistic Regression,1.0,,2026-10-21 19:30:30.374726
+delay_risk_performance,fn,610.0,Logistic Regression,1.0,,2026-10-21 19:30:30.374726
+delay_risk_performance,tp,1084.0,Logistic Regression,1.0,,2026-10-21 19:30:30.374726
+delay_risk_performance,predicted_positive_rate,0.18565717141429286,Logistic Regression,1.0,,2026-10-21 19:30:30.374726
+delay_risk_performance,medium_threshold,0.4,Logistic Regression,1.0,,2026-10-21 19:30:30.374726
+delay_risk_performance,high_threshold,0.65,Logistic Regression,1.0,,2026-10-21 19:30:30.374726
+delay_risk_performance,threshold_definition,,Logistic Regression,1.0,"Positive class = actual duration > P75 of training durations; duration-risk proxy, not an SLA",2026-10-21 19:30:30.374726
+app_meta,risk_model,,Logistic Regression,1.0,Logistic Regression,2026-10-21 19:30:30.374726

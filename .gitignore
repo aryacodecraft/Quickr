@@ -1,0 +1,17 @@
+# Python virtual environment and caches
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Local build/scratch files
+.build/
+logs/
+*.log
+
+# Local-only configuration
+.env
+
+# Hadoop logs; the small Windows helper binaries in .hadoop/bin are kept
+.hadoop/logs/

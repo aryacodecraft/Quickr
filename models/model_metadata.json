@@ -1,0 +1,115 @@
+{
+  "model_name": "Random Forest",
+  "model_version": "1.0",
+  "target": "delivery duration in minutes",
+  "target_unit": "minutes",
+  "training_rows": 32012,
+  "test_rows": 8004,
+  "feature_order": [
+    "Delivery_person_Age",
+    "Delivery_person_Ratings",
+    "distance_km",
+    "Vehicle_condition",
+    "multiple_deliveries",
+    "Weatherconditions",
+    "Road_traffic_density",
+    "Type_of_order",
+    "Type_of_vehicle",
+    "Festival",
+    "City"
+  ],
+  "random_seed": 42,
+  "numeric_features": [
+    "Delivery_person_Age",
+    "Delivery_person_Ratings",
+    "distance_km",
+    "Vehicle_condition",
+    "multiple_deliveries"
+  ],
+  "categorical_features": [
+    "Weatherconditions",
+    "Road_traffic_density",
+    "Type_of_order",
+    "Type_of_vehicle",
+    "Festival",
+    "City"
+  ],
+  "categorical_options": {
+    "Weatherconditions": [
+      "Cloudy",
+      "Fog",
+      "Sandstorms",
+      "Stormy",
+      "Sunny",
+      "Windy"
+    ],
+    "Road_traffic_density": [
+      "High",
+      "Jam",
+      "Low",
+      "Medium"
+    ],
+    "Type_of_order": [
+      "Buffet",
+      "Drinks",
+      "Meal",
+      "Snack"
+    ],
+    "Type_of_vehicle": [
+      "electric_scooter",
+      "motorcycle",
+      "scooter"
+    ],
+    "Festival": [
+      "No",
+      "Yes"
+    ],
+    "City": [
+      "Metropolitan",
+      "Semi-Urban",
+      "Urban"
+    ]
+  },
+  "numeric_ranges": {
+    "Delivery_person_Age": {
+      "min": 20.0,
+      "max": 39.0
+    },
+    "Delivery_person_Ratings": {
+      "min": 2.5,
+      "max": 5.0
+    },
+    "distance_km": {
+      "min": 1.4650674052309467,
+      "max": 20.969489380087342
+    },
+    "Vehicle_condition": {
+      "min": 0.0,
+      "max": 2.0
+    },
+    "multiple_deliveries": {
+      "min": 0.0,
+      "max": 3.0
+    }
+  },
+  "default_values": {
+    "Delivery_person_Age": 30.0,
+    "Delivery_person_Ratings": 4.7,
+    "distance_km": 9.193373039577208,
+    "Vehicle_condition": 1.0,
+    "multiple_deliveries": 1.0,
+    "Restaurant_latitude": 19.065838,
+    "Restaurant_longitude": 76.618203,
+    "Delivery_location_latitude": 19.124049,
+    "Delivery_location_longitude": 76.662278
+  },
+  "late_threshold_min": 33.0,
+  "split_method": "80/20 random holdout, random_state=42",
+  "run_id": "20261021T193020Z",
+  "metrics": {
+    "mae": 3.126179993336665,
+    "rmse": 3.9218431898095574,
+    "r2": 0.8193881026352773,
+    "mape": 0.13471583816558808
+  }
+}

@@ -1,0 +1,19 @@
+# Quickr — tested locally on Windows 11, Python 3.11.9, Java 17
+# Spark 3.5.3 bundles Scala 2.12 and Hadoop 3.3.4
+pyspark==3.5.3
+pandas==2.2.3
+numpy==1.26.4
+pyarrow==17.0.0
+scikit-learn==1.5.2
+joblib==1.4.2
+streamlit==1.41.1
+plotly==5.24.1
+matplotlib==3.9.2
+cassandra-driver==3.29.2
+python-dotenv==1.0.1
+jupyter==1.1.1
+notebook==7.2.2
+nbconvert==7.16.4
+nbformat==5.10.4
+ipykernel==6.29.5
+pytest==8.3.4
